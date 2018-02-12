@@ -33,11 +33,11 @@ public final class ModItems {
 		}
 	};
 	
-	// constructors
-		// constructItem constructs an Item and puts it in a CreativeTabs with a texture
-			// itemName is the Item to construct
+	// methods
+		// buildItem builds an Item and puts it in a CreativeTabs with a texture
+			// itemName is the Item to build
 			// itemTab is the tab to put the Item in
-	public static void constructItem(String itemString, CreativeTabs itemTab) {
+	public static void buildItem(String itemString, CreativeTabs itemTab) {
 		Item itemObject = new Item().setUnlocalizedName(itemString).setCreativeTab(itemTab).setTextureName(Main.MODID + ":" + itemString);
 		GameRegistry.registerItem(itemObject, itemString);
 	}
@@ -45,22 +45,22 @@ public final class ModItems {
 	public static final void init() {
 		
 		// crystal items
-		constructItem("baeliz_crystal", tabEmpathyItems);		
-		constructItem("nieliz_crystal", tabEmpathyItems);
-		constructItem("gueliz_crystal", tabEmpathyItems);
-		constructItem("daeliz_crystal", tabEmpathyItems);
-		constructItem("brelun_crystal", tabEmpathyItems);
-		constructItem("raegol_crystal", tabEmpathyItems);
-		constructItem("orayen_crystal", tabEmpathyItems);
-		constructItem("jelion_crystal", tabEmpathyItems);
-		constructItem("larane_crystal", tabEmpathyItems);
-		constructItem("garale_crystal", tabEmpathyItems);
-		constructItem("ciryla_crystal", tabEmpathyItems);
-		constructItem("buedin_crystal", tabEmpathyItems);
-		constructItem("brodin_crystal", tabEmpathyItems);
-		constructItem("vieral_crystal", tabEmpathyItems);
-		constructItem("maiera_crystal", tabEmpathyItems);
-		constructItem("pitera_crystal", tabEmpathyItems);
+		buildItem("baeliz_crystal", tabEmpathyItems);		
+		buildItem("nieliz_crystal", tabEmpathyItems);
+		buildItem("gueliz_crystal", tabEmpathyItems);
+		buildItem("daeliz_crystal", tabEmpathyItems);
+		buildItem("brelun_crystal", tabEmpathyItems);
+		buildItem("raegol_crystal", tabEmpathyItems);
+		buildItem("orayen_crystal", tabEmpathyItems);
+		buildItem("jelion_crystal", tabEmpathyItems);
+		buildItem("larane_crystal", tabEmpathyItems);
+		buildItem("garale_crystal", tabEmpathyItems);
+		buildItem("ciryla_crystal", tabEmpathyItems);
+		buildItem("buedin_crystal", tabEmpathyItems);
+		buildItem("brodin_crystal", tabEmpathyItems);
+		buildItem("vieral_crystal", tabEmpathyItems);
+		buildItem("maiera_crystal", tabEmpathyItems);
+		buildItem("pitera_crystal", tabEmpathyItems);
 	}
 	
 }

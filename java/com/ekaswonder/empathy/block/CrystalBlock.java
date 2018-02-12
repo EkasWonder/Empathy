@@ -15,7 +15,7 @@ public class CrystalBlock extends Block {
 		this.setHardness(1.2F);
 		this.setResistance(2.0F);
 		this.setStepSound(soundTypeGlass);
-		this.setLightOpacity(2);
+		this.setLightOpacity(4);
 		this.setLightLevel(0.1F);
 		this.setHarvestLevel("pickaxe", 2);
 	}
