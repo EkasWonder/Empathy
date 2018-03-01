@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 
 public final class ModItems {
 		
-	// crystal items
+	// crystals
 	public static Item baelizCrystal; // white
 	public static Item nielizCrystal; // light gray
 	public static Item guelizCrystal; // gray
@@ -25,7 +25,9 @@ public final class ModItems {
 	public static Item vieralCrystal; // purple
 	public static Item maieraCrystal; // magenta
 	public static Item piteraCrystal; // pink
-	//TODO initialize the keraline item
+	// keraline
+	public static Item keralineFragment; // keraline fragment
+	public static Item keralineCrystal; // keraline crystal
 	
 	// methods
 	public static void buildMaterialItem(String itemString) {
@@ -52,6 +54,8 @@ public final class ModItems {
 		buildMaterialItem("vieralCrystal");
 		buildMaterialItem("maieraCrystal");
 		buildMaterialItem("piteraCrystal");
-		//TODO create the keraline item
+		// keraline
+		buildMaterialItem("keralineFragment"); // [WARNING] texture does not exist
+		buildMaterialItem("keralineCrystal"); // [WARNING] texture does not exist
 	}	
 }

@@ -11,10 +11,11 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
     		ModItems.init();
     		ModBlocks.init();
+    		EmpathyRecipes.init();
     }
 
     public void init(FMLInitializationEvent e) {
-
+    		
     }
 
     public void postInit(FMLPostInitializationEvent e) {

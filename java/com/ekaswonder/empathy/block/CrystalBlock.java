@@ -19,14 +19,16 @@ public class CrystalBlock extends Block {
 		this.setStepSound(soundTypeGlass);
 		this.setLightOpacity(4);
 		//this.setLightLevel(0.0F);
-		this.setHarvestLevel("pickaxe", 2);
+		this.setHarvestLevel("pickaxe", 2);	
 	}
 	
-	/*public void onNeighborBlockChange(World world, int x, int y, int z, int blockID) {
-	    if (world.isBlockIndirectlyGettingPowered(x, y, z)) {
-	    	this.slipperiness = (1.2F);
-	    } else {
-	    	this.slipperiness = (0.2F);
-	    }
+	/*@SideOnly(Side.CLIENT)
+    public int getRenderBlockPass() {
+        return 1;
+    }
+	
+	@SideOnly(Side.CLIENT)
+    public boolean shouldSideBeRendered(IBlockAccess blockAccess, int x, int y, int z, int side) {
+        return super.shouldSideBeRendered(blockAccess, x, y, z, 1 - side);
     }*/
 }

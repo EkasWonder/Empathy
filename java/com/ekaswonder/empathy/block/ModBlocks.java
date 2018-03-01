@@ -2,6 +2,7 @@ package com.ekaswonder.empathy.block;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+
 public class ModBlocks {
 	
 	// crystal blocks
@@ -21,8 +22,11 @@ public class ModBlocks {
 	public static Block vieralBlock; // purple
 	public static Block maieraBlock; // magenta
 	public static Block piteraBlock; // pink
+	// keraline
+	public static Block keralineOre; // keraline ore
+	public static Block keralineBlock; // keraline block
 	// laser utility blocks
-	//public static Block laserCutterBlock; // laser cutter
+	public static Block laserCutter; // laser cutter
 	
 	public static final void init() {
 		
@@ -43,8 +47,10 @@ public class ModBlocks {
 		GameRegistry.registerBlock(vieralBlock = new CrystalBlock("vieralBlock"), "vieralBlock");
 		GameRegistry.registerBlock(maieraBlock = new CrystalBlock("maieraBlock"), "maieraBlock");
 		GameRegistry.registerBlock(piteraBlock = new CrystalBlock("piteraBlock"), "piteraBlock");
+		// keraline
+		GameRegistry.registerBlock(keralineOre = new OreBlock("keralineOre"), "keralineOre");
+		GameRegistry.registerBlock(keralineBlock = new OreBlock("keralineBlock"), "keralineBlock");
 		// laser utility blocks
-		//GameRegistry.registerBlock(laserCutterBlock = new LaserUtilityBlock("laserCutterBlock", Material.iron), "laserCutterBlock");
-		//TODO create laser cutter
-	}
+		GameRegistry.registerBlock(laserCutter = new LaserUtilityBlock("laserCutter"), "laserCutterBlock");
+		}
 }
