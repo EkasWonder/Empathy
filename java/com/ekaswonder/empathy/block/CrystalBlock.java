@@ -1,6 +1,5 @@
 package com.ekaswonder.empathy.block;
 
-import com.ekaswonder.empathy.EmpathyTabs;
 import com.ekaswonder.empathy.Main;
 
 import net.minecraft.block.Block;
@@ -12,7 +11,7 @@ public class CrystalBlock extends Block {
 		super(Material.glass);
 		this.setBlockName(unlocalizedName);
 		this.setBlockTextureName(Main.MODID + ":" + unlocalizedName);
-		this.setCreativeTab(EmpathyTabs.empathyTab);
+		this.setCreativeTab(Main.empathyTab);
 		this.slipperiness = (1.1F);
 		this.setHardness(1.2F);
 		this.setResistance(2.0F);

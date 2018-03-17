@@ -7,6 +7,9 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION)
 public class Main {
@@ -35,4 +38,11 @@ public class Main {
     public void postInit(FMLPostInitializationEvent e) {
     	proxy.postInit(e);
     }
+    
+    public static final CreativeTabs empathyTab = new CreativeTabs("empathyTab") {
+        @Override
+        public Item getTabIconItem() {
+        	return Items.emerald;
+        }
+    };
 }

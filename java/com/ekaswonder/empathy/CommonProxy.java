@@ -1,6 +1,6 @@
 package com.ekaswonder.empathy;
-import com.ekaswonder.empathy.block.ModBlocks;
-import com.ekaswonder.empathy.item.ModItems;
+import com.ekaswonder.empathy.block.EmpathyBlocks;
+import com.ekaswonder.empathy.item.EmpathyItems;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -9,8 +9,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent e) {
-    		ModItems.init();
-    		ModBlocks.init();
+    		EmpathyItems.init();
+    		EmpathyBlocks.init();
     		EmpathyRecipes.init();
     }
 

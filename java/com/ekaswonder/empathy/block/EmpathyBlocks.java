@@ -1,9 +1,11 @@
 package com.ekaswonder.empathy.block;
 
+import com.ekaswonder.empathy.item.EmpathyItems;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 
-public class ModBlocks {
+public class EmpathyBlocks {
 	
 	// crystal blocks
 	public static Block baelizBlock; // white
@@ -22,10 +24,14 @@ public class ModBlocks {
 	public static Block vieralBlock; // purple
 	public static Block maieraBlock; // magenta
 	public static Block piteraBlock; // pink
-	// keraline
+	// keraline blocks
+	//TODO give textures to the keraline ore
 	public static Block keralineOre; // keraline ore
+	//TODO give textures to the keraline block
 	public static Block keralineBlock; // keraline block
 	// laser utility blocks
+	public static Block laserAssembler; // laser assembler
+	public static Block laserInfuser; // laser infuser
 	public static Block laserCutter; // laser cutter
 	
 	public static final void init() {
@@ -47,10 +53,12 @@ public class ModBlocks {
 		GameRegistry.registerBlock(vieralBlock = new CrystalBlock("vieralBlock"), "vieralBlock");
 		GameRegistry.registerBlock(maieraBlock = new CrystalBlock("maieraBlock"), "maieraBlock");
 		GameRegistry.registerBlock(piteraBlock = new CrystalBlock("piteraBlock"), "piteraBlock");
-		// keraline
-		GameRegistry.registerBlock(keralineOre = new OreBlock("keralineOre"), "keralineOre");
-		GameRegistry.registerBlock(keralineBlock = new OreBlock("keralineBlock"), "keralineBlock");
+		// keraline blocks
+		GameRegistry.registerBlock(keralineOre = new KeralineOreBlock("keralineOre", EmpathyItems.keralineFragment, 1, 9), "keralineOre");
+		GameRegistry.registerBlock(keralineBlock = new CrystalBlock("keralineBlock"), "keralineBlock");
 		// laser utility blocks
+		GameRegistry.registerBlock(laserAssembler = new LaserUtilityBlock("laserAssembler"), "laserAssemblerBlock");
+		GameRegistry.registerBlock(laserInfuser = new LaserUtilityBlock("laserInfuser"), "laserInfuserBlock");
 		GameRegistry.registerBlock(laserCutter = new LaserUtilityBlock("laserCutter"), "laserCutterBlock");
 		}
 }
