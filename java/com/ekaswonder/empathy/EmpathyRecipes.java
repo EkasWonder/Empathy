@@ -15,7 +15,7 @@ public class EmpathyRecipes {
 		GameRegistry.addRecipe(new ItemStack(item),
 			new Object[] {"DDD", "DKD", "DDD",
 				'D', new ItemStack(Items.dye, 1, dye),
-				'K', new ItemStack(EmpathyItems.keralineCrystal)
+				'K', new ItemStack(EmpathyItems.keralinePiece)
 			}
 		);
 	}
@@ -28,6 +28,14 @@ public class EmpathyRecipes {
 				'L', new ItemStack(Blocks.lever),
 				'I', new ItemStack(Blocks.heavy_weighted_pressure_plate),
 				'R', new ItemStack(Blocks.redstone_block)
+			}
+		);
+		GameRegistry.addRecipe(new ItemStack(EmpathyItems.laserEmitter),
+			new Object[] {"CCC", "CDC", "IGI",
+				'C', new ItemStack(Blocks.hardened_clay),
+				'D', new ItemStack(Items.diamond),
+				'I', new ItemStack(Items.iron_ingot),
+				'G', new ItemStack(Blocks.glass_pane)
 			}
 		);
 		// laser utility blocks

@@ -10,7 +10,7 @@ import net.minecraft.util.IIcon;
 public class LaserUtilityBlock extends Block {
 
 	private IIcon[] icons = new IIcon[6];
-	private String unlocalizedName;
+	private String unlocalizedNameSide;
 	
 	protected LaserUtilityBlock(String unlocalizedName) {
 		super(Material.iron);
@@ -21,25 +21,17 @@ public class LaserUtilityBlock extends Block {
 		this.setStepSound(soundTypeAnvil);
 		this.setLightOpacity(16);
 		this.setLightLevel(0.0F);
-		this.unlocalizedName = unlocalizedName;
+		this.unlocalizedNameSide = unlocalizedName + "BlockSide";
 	}
 	
 	@Override
 	public void registerBlockIcons(IIconRegister reg) {
 		icons[0] = reg.registerIcon(Main.MODID + ":" + "laserUtilityBlockBottom");
 		icons[1] = reg.registerIcon(Main.MODID + ":" + "laserUtilityBlockTop");
-		icons[2] = reg.registerIcon(Main.MODID + ":" + unlocalizedName + "Side");
-		icons[3] = reg.registerIcon(Main.MODID + ":" + "laserUtilityBlockSide");
+		icons[2] = reg.registerIcon(Main.MODID + ":" + unlocalizedNameSide);
+		icons[3] = reg.registerIcon(Main.MODID + ":" + unlocalizedNameSide);
 		icons[4] = reg.registerIcon(Main.MODID + ":" + "laserUtilityBlockSide");
 		icons[5] = reg.registerIcon(Main.MODID + ":" + "laserUtilityBlockSide");
-		/* missing textures
-		laserUtilityBlockTop
-		laserUtilityBlockSide
-		laserUtilityBlockBottom
-		laserAssemblerBlockSide
-		laserInfuserBlockSide
-		laserCutterBlockSide
-		*/
 	}
 	
 	@Override

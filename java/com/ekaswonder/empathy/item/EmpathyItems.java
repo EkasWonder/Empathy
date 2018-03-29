@@ -7,7 +7,6 @@ import net.minecraft.item.Item;
 
 public final class EmpathyItems {
 		
-	// crystals
 	public static Item baelizCrystal; // white
 	public static Item nielizCrystal; // light gray
 	public static Item guelizCrystal; // gray
@@ -24,19 +23,13 @@ public final class EmpathyItems {
 	public static Item vieralCrystal; // purple
 	public static Item maieraCrystal; // magenta
 	public static Item piteraCrystal; // pink
-	// phosphor crystal
-	public static Item ancientPhosphorCrystal; // ancient phosphor
-	public static Item redPhosphorCrystal; // red phosphor
-	public static Item greenPhosphorCrystal; // green phosphor
-	public static Item bluePhosphorCrystal; // blue phosphor
-	public static Item purePhosphorCrystal; // pure phosphor
-	// keraline
-	//TODO give a texture to the keraline fragment
-	public static Item keralineFragment; // keraline fragment
-	//TODO give a texture to the keraline crystal
-	public static Item keralineCrystal; // keraline crystal
-	
-	// laser items
+
+	public static Item auraPhosphorCrystal;
+	public static Item massPhosphorCrystal;
+
+	public static Item keralineFragment;
+	public static Item keralinePiece;
+
 	public static Item controlPanel;
 	public static Item laserEmitter;
 	
@@ -48,27 +41,29 @@ public final class EmpathyItems {
 	
 	public static final void init() {
 		
-		// crystal items
-		buildMaterialItem("baelizCrystal");		
-		buildMaterialItem("nielizCrystal");
-		buildMaterialItem("guelizCrystal");
-		buildMaterialItem("daelizCrystal");
-		buildMaterialItem("brelunCrystal");
-		buildMaterialItem("raegolCrystal");
-		buildMaterialItem("orayenCrystal");
-		buildMaterialItem("jelionCrystal");
-		buildMaterialItem("laraneCrystal");
-		buildMaterialItem("garaleCrystal");
-		buildMaterialItem("cirylaCrystal");
-		buildMaterialItem("buedinCrystal");
-		buildMaterialItem("brodinCrystal");
-		buildMaterialItem("vieralCrystal");
-		buildMaterialItem("maieraCrystal");
-		buildMaterialItem("piteraCrystal");
-		// keraline
+		buildMaterialItem("baelizCrystal");	// white	
+		buildMaterialItem("nielizCrystal"); // light gray
+		buildMaterialItem("guelizCrystal"); // gray
+		buildMaterialItem("daelizCrystal"); // black
+		buildMaterialItem("brelunCrystal"); // brown
+		buildMaterialItem("raegolCrystal"); // red
+		buildMaterialItem("orayenCrystal"); // orange
+		buildMaterialItem("jelionCrystal"); // yellow
+		buildMaterialItem("laraneCrystal"); // lime
+		buildMaterialItem("garaleCrystal"); // green
+		buildMaterialItem("cirylaCrystal"); // cyan
+		buildMaterialItem("buedinCrystal"); // light blue
+		buildMaterialItem("brodinCrystal"); // blue
+		buildMaterialItem("vieralCrystal"); // purple
+		buildMaterialItem("maieraCrystal"); // magenta
+		buildMaterialItem("piteraCrystal"); // pink
+
+		buildMaterialItem("auraPhosphorCrystal");
+		buildMaterialItem("massPhosphorCrystal");
+		
 		buildMaterialItem("keralineFragment");
-		buildMaterialItem("keralineCrystal");
-		// laser items
+		buildMaterialItem("keralinePiece");
+
 		buildMaterialItem("controlPanel");
 		buildMaterialItem("laserEmitter");
 	}	
