@@ -24,9 +24,7 @@ public class EmpathyBlocks {
 	public static Block maieraBlock; // magenta
 	public static Block piteraBlock; // pink
 	
-	//TODO give texture to keralineOre
 	public static Block keralineOre; // keraline ore
-	//TODO give texture to keralineBlock
 	public static Block keralineBlock; // keraline block
 	
 	public static Block laserAssembler; // laser assembler

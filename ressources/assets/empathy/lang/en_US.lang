@@ -1,5 +1,30 @@
 itemGroup.empathyTab=Empathy
 
+tile.baelizBlock.name=Baeliz Block
+tile.nielizBlock.name=Nieliz Block
+tile.guelizBlock.name=Gueliz Block
+tile.daelizBlock.name=Daeliz Block
+tile.brelunBlock.name=Brelun Block
+tile.raegolBlock.name=Raegol Block
+tile.orayenBlock.name=Orayen Block
+tile.jelionBlock.name=Jelion Block
+tile.laraneBlock.name=Larane Block
+tile.garaleBlock.name=Garale Block
+tile.cirylaBlock.name=Ciryla Block
+tile.buedinBlock.name=Buedin Block
+tile.brodinBlock.name=Brodin Block
+tile.vieralBlock.name=Vieral Block
+tile.maieraBlock.name=Maiera Block
+tile.piteraBlock.name=Pitera Block
+
+tile.keralineOre.name=Keraline Ore
+tile.keralineBlock.name=Keraline Block
+
+tile.laserAssembler.name=Laser Assembler
+tile.laserInfuser.name=Laser Infuser
+tile.laserCutter.name=Laser Cutter
+
+
 item.baelizCrystal.name=Baeliz Crystal
 item.nielizCrystal.name=Nieliz Crystal
 item.guelizCrystal.name=Gueliz Crystal
@@ -17,19 +42,11 @@ item.vieralCrystal.name=Vieral Crystal
 item.maieraCrystal.name=Maiera Crystal
 item.piteraCrystal.name=Pitera Crystal
 
-tile.baelizBlock.name=Baeliz Block
-tile.nielizBlock.name=Nieliz Block
-tile.guelizBlock.name=Gueliz Block
-tile.daelizBlock.name=Daeliz Block
-tile.brelunBlock.name=Brelun Block
-tile.raegolBlock.name=Raegol Block
-tile.orayenBlock.name=Orayen Block
-tile.jelionBlock.name=Jelion Block
-tile.laraneBlock.name=Larane Block
-tile.garaleBlock.name=Garale Block
-tile.cirylaBlock.name=Ciryla Block
-tile.buedinBlock.name=Buedin Block
-tile.brodinBlock.name=Brodin Block
-tile.vieralBlock.name=Vieral Block
-tile.maieraBlock.name=Maiera Block
-tile.piteraBlock.name=Pitera Block
+item.auraPhosphorCrystal.name=Aura Phosphor Crystal
+item.massPhosphorCrystal.name=Mass Phosphor Crystal
+
+item.keralineFragment.name=Keraline Fragment
+item.keralinePiece.name=Keraline Piece
+
+item.controlPanel.name=Control Panel
+item.laserEmitter.name=Laser Emitter

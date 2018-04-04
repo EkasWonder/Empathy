@@ -24,6 +24,8 @@ public final class EmpathyItems {
 	public static Item maieraCrystal; // magenta
 	public static Item piteraCrystal; // pink
 
+	//public static Item woven
+	
 	public static Item auraPhosphorCrystal;
 	public static Item massPhosphorCrystal;
 
