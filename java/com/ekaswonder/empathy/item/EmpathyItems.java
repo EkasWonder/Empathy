@@ -35,12 +35,22 @@ public final class EmpathyItems {
 	public static Item controlPanel;
 	public static Item laserEmitter;
 	
-	// methods
+	/**
+	 * Builds a crystal and registers it with the required parameters
+	 * @param itemString code name for the crystal
+	 * @author EkasWonder
+	 * @since 1.7.10-0.3
+	 */
 	public static void buildMaterialItem(String itemString) {
 		Item itemObject = new Item().setUnlocalizedName(itemString).setCreativeTab(Main.empathyTab).setTextureName(Main.MODID + ":" + itemString);
 		GameRegistry.registerItem(itemObject, itemString);
 	}
 	
+	/**
+	 * Registers items to the game registry
+	 * @author EkasWonder
+	 * @since 1.7.10-0.3
+	 */
 	public static final void init() {
 		
 		buildMaterialItem("baelizCrystal");	// white	

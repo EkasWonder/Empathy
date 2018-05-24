@@ -1,36 +1,60 @@
 package com.ekaswonder.empathy.block;
 
-import com.ekaswonder.empathy.item.EmpathyItems;
-
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 
 public class EmpathyBlocks {
 	
-	public static Block baelizBlock; // white
-	public static Block nielizBlock; // light gray
-	public static Block guelizBlock; // gray
-	public static Block daelizBlock; // black
-	public static Block brelunBlock; // brown
-	public static Block raegolBlock; // red
-	public static Block orayenBlock; // orange
-	public static Block jelionBlock; // yellow
-	public static Block laraneBlock; // lime
-	public static Block garaleBlock; // green
-	public static Block cirylaBlock; // cyan
-	public static Block buedinBlock; // light blue
-	public static Block brodinBlock; // blue
-	public static Block vieralBlock; // purple
-	public static Block maieraBlock; // magenta
-	public static Block piteraBlock; // pink
+	/** White crystal block */
+	public static Block baelizBlock;
+	/** Light gray crystal block */
+	public static Block nielizBlock;
+	/** Gray crystal block */
+	public static Block guelizBlock;
+	/** Black crystal block */
+	public static Block daelizBlock;
+	/** Brown crystal block */
+	public static Block brelunBlock;
+	/** Red crystal block */
+	public static Block raegolBlock;
+	/** Orange crystal block */
+	public static Block orayenBlock;
+	/** Yellow crystal block */
+	public static Block jelionBlock;
+	/** Lime crystal block */
+	public static Block laraneBlock;
+	/** Green crystal block */
+	public static Block garaleBlock;
+	/** Cyan crystal block */
+	public static Block cirylaBlock;
+	/** Light blue crystal block */
+	public static Block buedinBlock;
+	/** Blue crystal block */
+	public static Block brodinBlock;
+	/** Purple crystal block */
+	public static Block vieralBlock;
+	/** Magenta crystal block */
+	public static Block maieraBlock;
+	/** Pink crystal block */
+	public static Block piteraBlock;
 	
+	/** Keraline ore block */
 	public static Block keralineOre; // keraline ore
+	/** Keraline crystal block */
 	public static Block keralineBlock; // keraline block
 	
+	/** Laser assembler utility block, assembles items into blocks */
 	public static Block laserAssembler; // laser assembler
+	/** Laser infuser utility block, infuses keraline into crystals */
 	public static Block laserInfuser; // laser infuser
+	/** Laser cutter utility, cuts crystals into charms and other useful items */
 	public static Block laserCutter; // laser cutter
 	
+	/**
+	 * Registers blocks in the game registry
+	 * @author EkasWonder
+	 * @since 1.7.10-0.4
+	 */
 	public static final void init() {
 		
 		GameRegistry.registerBlock(baelizBlock = new CrystalBlock("baelizBlock"), "baelizBlock");
@@ -50,7 +74,8 @@ public class EmpathyBlocks {
 		GameRegistry.registerBlock(maieraBlock = new CrystalBlock("maieraBlock"), "maieraBlock");
 		GameRegistry.registerBlock(piteraBlock = new CrystalBlock("piteraBlock"), "piteraBlock");
 		
-		GameRegistry.registerBlock(keralineOre = new KeralineOreBlock("keralineOre", EmpathyItems.keralineFragment, 3, 7), "keralineOre");
+		GameRegistry.registerBlock(keralineOre = new KeralineOreBlock(0), "keralineOre");
+		GameRegistry.registerBlock(keralineOre = new KeralineOreBlock(1), "keralineNetherOre");
 		GameRegistry.registerBlock(keralineBlock = new CrystalBlock("keralineBlock"), "keralineBlock");
 		
 		GameRegistry.registerBlock(laserAssembler = new LaserUtilityBlock("laserAssembler"), "laserAssemblerBlock");

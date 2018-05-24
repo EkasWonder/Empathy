@@ -1,3 +1,5 @@
+;BLOCKS
+
 itemGroup.empathyTab=Empathy
 
 tile.baelizBlock.name=Baeliz Block
@@ -24,6 +26,7 @@ tile.laserAssembler.name=Laser Assembler
 tile.laserInfuser.name=Laser Infuser
 tile.laserCutter.name=Laser Cutter
 
+;ITEMS
 
 item.baelizCrystal.name=Baeliz Crystal
 item.nielizCrystal.name=Nieliz Crystal

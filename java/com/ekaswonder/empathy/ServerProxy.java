@@ -6,17 +6,29 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class ServerProxy extends CommonProxy {
 
-    @Override
+	/**
+	 * First step of the initialization system
+	 * @author EkasWonder
+	 * @since 1.7.10-0.2
+	 */
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
     }
 
-    @Override
+    /**
+	 * Second step of the initialization system
+	 * @author EkasWonder
+	 * @since 1.7.10-0.2
+	 */
     public void init(FMLInitializationEvent e) {
         super.init(e);
     }
 
-    @Override
+    /**
+	 * Third step of the initialization system
+	 * @author EkasWonder
+	 * @since 1.7.10-0.2
+	 */
     public void postInit(FMLPostInitializationEvent e) {
         super.postInit(e);
     }

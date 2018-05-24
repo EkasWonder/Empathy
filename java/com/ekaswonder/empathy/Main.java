@@ -24,6 +24,15 @@ public class Main {
     @SidedProxy(clientSide="com.ekaswonder.empathy.CommonProxy", serverSide="com.ekaswonder.empathy.ServerProxy")
     public static CommonProxy proxy; 
     
+    /**
+     * Enumerates the laser utility blocks for easier GUI coding
+     * @author ekasw
+     * @since 1.7.10-0.6
+     */
+    public enum guiEnum {
+    	assembler, infuser, cutter
+    }
+    
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
     	proxy.preInit(e);
@@ -39,8 +48,8 @@ public class Main {
     	proxy.postInit(e);
     }
     
+    
     public static final CreativeTabs empathyTab = new CreativeTabs("empathyTab") {
-        @Override
         public Item getTabIconItem() {
         	return Items.emerald;
         }

@@ -11,7 +11,14 @@ import net.minecraft.item.ItemStack;
 
 public class EmpathyRecipes {
 	
-	public static final void buildCrystal(Item item, int dye) {
+	/**
+	 * Builds a crystal by giving it a recipe in this shape : {@code "DDD","DKD","DDD"}
+	 * @param item The crystal to build
+	 * @param dye The ID of the dye that the crystal should be made with
+	 * @author EkasWonder
+	 * @since 1.7.10-0.4
+	 */
+	private static final void buildCrystal(Item item, int dye) {
 		GameRegistry.addRecipe(new ItemStack(item),
 			new Object[] {"DDD", "DKD", "DDD",
 				'D', new ItemStack(Items.dye, 1, dye),
@@ -20,6 +27,12 @@ public class EmpathyRecipes {
 		);
 	}
 	
+	/**
+	 * Creates the recipes for the items and blocks
+	 * @author Azurelan
+	 * @author EkasWonder
+	 * @since 1.7.10-0.4
+	 */
 	public static void init() {
 		// ingredients
 		GameRegistry.addRecipe(new ItemStack(EmpathyItems.controlPanel),
